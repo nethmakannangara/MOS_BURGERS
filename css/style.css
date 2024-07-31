@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nanum+Myeongjo&display=swap');
+
+header {
+    display: flex;
+    width: 40%;
+    position: relative;
+    justify-content: center;
+    float: right;
+    margin-top: 5%;
+}
+
+header h1 {
+    font-family: "Calligraffitti", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+}
+
+.details {
+    position: relative;
+    float: right;
+    width: 40%;
+    position: relative;
+    justify-content: center;
+    clear: right;
+    margin-top: 2%;
+
+}
+
+.details h2 {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.details p {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
+.btn_filed {
+    width: 40%;
+    display: block;
+    justify-content: center;
+    float: right;
+    clear: right;
+    height: 300px;
+}
+
+
+#btnAdmin,
+#btnUser {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    border-radius: 80rem;
+    color: white;
+    padding: 10px 20px;
+    width: 40%;
+    text-align: center;
+    border: none;
+    margin: 30px;
+    margin-left: 30%;
+
+
+
+}
+
+#btnAdmin {
+    background: linear-gradient(90deg, #3B3636, #A19393 100%);
+    display: table-cell;
+}
+
+#btnUser {
+    background: linear-gradient(90deg, #A19393, #3B3636 100%);
+    display: table-cell;
+}
+
+.image {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 6%;
+}
+
+.image img {
+    width: 90%;
+    height: 600px;
+    border-radius: 5%;
+    align-content: center;
+}
+
+.footer {
+    display: block;
+    float: right;
+    clear: right;
+    width: 40%;
+}
+
+#btnExit {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    border-radius: 80rem;
+    color: white;
+    padding: 10px 10px;
+    width: 20%;
+    text-align: center;
+    border: none;
+    background-color: #3B3636;
+    display: block;
+    margin: 5px 15px;
+    float: right;
+}

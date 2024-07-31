@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Klee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Inter:wght@100..900&family=Klee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inter:wght@100..900&family=Klee+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+header {
+    display: flex;
+    width: 100%;
+
+    justify-content: center;
+    margin-top: 2%;
+}
+
+header h1 {
+    font-family: "Calligraffitti", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+}
+
+.title {
+    width: 100%;
+}
+
+.title h2 {
+    font-family: "Klee One", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+    margin-left: 5%;
+
+}
+
+.search-customer {
+    display: block;
+    width: 100%;
+}
+
+.search-customer label {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    margin-left: 1%;
+    margin-top: 2%;
+
+}
+
+.search-customer input {
+    width: 100%;
+    max-width: 220px;
+    height: 45px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+
+
+}
+
+.search-customer button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #A19393, #3B3636);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17px;
+    padding: 0.3em 1em;
+    margin-left: 0.5%;
+}
+
+.search-customer button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+    0% {
+        box-shadow: 0 0 0 0 #1e1f1f66;
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    z-index: 1;
+}
+
+.place-order {
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.customer-details {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 2%;
+
+}
+
+.customer-details label,
+.place-order label {
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+.customer-details input,
+.place-order input {
+    width: 100%;
+    max-width: 220px;
+    height: 45px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+}
+
+
+.customer-details input:hover,
+.place-order input:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+}
+
+
+.customer-details input:active,
+.place-order input:active {
+    transform: scale(0.95);
+}
+
+
+.customer-details input:focus,
+.place-order input:focus {
+    border: 2px solid grey;
+}
+
+/* .customer-details button,
+.place-order button {
+    position: relative;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #7d2ae8;
+    transition: all 0.2s ease;
+} */
+
+#btnAddOrder,
+#btnPlaceOrder,
+#btnAddCustomer {
+    background-image: linear-gradient(#A19393, #3B3636);
+    border: none;
+    border-radius: 1rem;
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    box-shadow: 1px 3px 0px 3B3636#3B3636;
+    transition-duration: .3s;
+}
+
+#btnAddOrder {
+    width: 30%;
+    height: 40px;
+}
+
+#btnPlaceOrder {
+    width: 40%;
+    height: 50px;
+}
+
+#btnAddCustomer {
+    width: 30%;
+    height: 40px;
+}
+
+.cartIcon {
+    width: 14px;
+    height: fit-content;
+}
+
+.cartIcon path {
+    fill: white;
+}
+
+#btnAddOrder:active,
+#btnPlaceOrder:active,
+#btnAddCustomer:active {
+    transform: translate(2px, 0px);
+    box-shadow: 0px 1px 0px rgb(139, 113, 255);
+    padding-bottom: 1px;
+}
+
+.image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: right;
+    display: flex;
+
+}
+
+.image img {
+    position: relative;
+    width: 60%;
+    height: 800px;
+}
+
+
+
+
+.model {
+    display: none;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 10%;
+    top: 20%;
+    width: 80%;
+    height: 60%;
+    align-self: center;
+    overflow: auto;
+    border-radius: 1rem;
+    background-color: rgb(49, 48, 48);
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+.model-body {
+    display: block;
+    position: relative;
+    top: 25%;
+    bottom: 0;
+    background-color: #b2b2b2;
+    width: 80%;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 0.8rem;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+.model-body p {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 480;
+    font-size: 50px;
+    text-align: justify;
+    justify-items: center;
+}
+
+#btnCancel,
+#btnAdd {
+    background-image: linear-gradient(#908c8c, #3B3636);
+    border: none;
+    border-radius: 0.5rem;
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    display: block;
+    padding: 5px;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    box-shadow: 1px 3px 0px 3B3636#3B3636;
+    transition-duration: .3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.button {
+    width: 180px;
+    height: 40px;
+    background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
+    border: none;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    box-shadow: 1px 3px 0px rgb(139, 113, 255);
+    transition-duration: .3s;
+}
+
+.cartIcon {
+    width: 14px;
+    height: fit-content;
+}
+
+.cartIcon path {
+    fill: white;
+}
+
+.button:active {
+    transform: translate(2px, 0px);
+    box-shadow: 0px 1px 0px rgb(139, 113, 255);
+    padding-bottom: 1px;
+}
+
+#Order-List {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    top: 30%;
+    left: 60%;
+    width: 25%;
+    justify-content: right;
+    height: 400px;
+    overflow: auto;
+    background-color: hsla(0, 0%, 19%, 0.9);
+    border-radius: 20px;
+    justify-content: center;
+}
+
+#Order-List label {
+    display: flex;
+    color: #fff;
+}
+
+#amount-details {
+    position: absolute;
+    display: none;
+    top: 92%;
+    left: 50%;
+    float: right;
+}
+
+#amount-details label {
+    font-size: 28px;
+    color: red;
+}

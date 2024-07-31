@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nanum+Myeongjo&display=swap');
+
+header{
+    display: flex;
+    float: right;
+    width: 40%;
+    justify-content: center;
+    position: relative;
+    margin-top: 5%;
+
+}
+header h1 {
+    font-family: "Calligraffitti", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+}
+.option_panel{
+    display: block;
+    float: right;
+    clear: right;
+    width: 30%;
+    height: 450px;
+    background-color: #D9D9D9;
+    display: block;
+    border-radius: 3rem;
+    margin: 2% 5%;
+}
+
+#btnPlaceOrder ,#btnViewOrder,#btnSearch,#btnMonthlyReport{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    border-radius: 80rem;
+    padding: 10px 20px;
+    color: white;
+    background-color: #3B3636;
+    border: none;
+    width: 50%;
+    margin: 30px;
+    margin-left: 25%;
+}
+.image{
+    width: 60%;
+    justify-content: center;
+    display: flex;
+    margin-top: 8%;
+    position: absolute;
+}
+.image img{
+    width:95%;
+    border-radius: 3rem;
+    height: 600px;
+}
+.footer {
+    display: block;
+    float: right;
+    clear: right;
+    width: 40%;
+}
+
+#btnBack {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    border-radius: 80rem;
+    color: white;
+    padding: 10px 10px;
+    width: 20%;
+    text-align: center;
+    border: none;
+    background-color: #3B3636;
+    display: block;
+    margin: 5px 15px;
+    float: right;
+}
